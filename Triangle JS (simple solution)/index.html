@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="triangle.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/utils/Draggable.min.js"></script>
+
+</head>
+<body>
+    <div class="box">
+        <script src="triangle.js"></script>
+        <h1>Types of Triangles</h1>
+        <input type="button" class="triangles" value="Click to check the type" onclick="answer()">
+    </div>
+    <div class="split left">
+        <div class="centered">
+            <h2>Equilateral</h2>
+            <p>3 equal sides</p>
+            <p>All angles 60°</p>
+            <br>
+            <h2>Isosceles</h2>
+            <p>2 equal sides</p>
+            <p>2 equal angles</p>
+            <br>
+            <h2>Scalene</h2>
+            <p>No equal sides</p>
+            <p>No equal angles</p>
+        </div>
+    </div>
+
+    <div class="split right">
+        <div class="centered">
+            <h2>Right</h2>
+            <p>1 angle = 90°</p>
+            <p style="color: transparent">asdadas </p>
+            <br>
+            <h2>Acute</h2>
+            <p>all angles < 90°</p>
+            <p style="color: transparent"> adasdas</p>
+            <br>
+            <h2>Obtuse</h2>
+            <p>1 angle > 90°</p>
+            <p style="color: transparent">adaa </p>
+        </div>
+    </div>
+
+    <div class="awesome">
+        <svg class="triangle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 120 120">
+            <path fill="#ffffff" stroke="#000000" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" d="M54,17.2c-8.2,10.4-14.2,23.2-20.9,36.3c-8.5,16.8-17.5,34.2-26.4,48.4c18,4.5,53.5,1.4,58,1.2
+	c4.5-0.1,33.6,1.8,48.5-1.9C93.8,74.3,78.5,42.4,57.2,17c-0.1-0.1-0.9-1.3-1.7-1.3C54.9,15.7,54.2,16.9,54,17.2z"/>
+        </svg>
+        <script src="draggy.js"></script>
+    </div>
+
+</body>
+</html>

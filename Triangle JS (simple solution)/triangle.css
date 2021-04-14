@@ -1,0 +1,82 @@
+/* Split the screen in half */
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+    z-index: -1;
+    left: 0;
+    background-color: #c9e265;
+}
+
+/* Control the right side */
+.right {
+    z-index: -1;
+    right: 0;
+    background-color: #5ce1e6;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+    width: 150px;
+}
+
+.box {
+    border: 7px;
+    border-style: double;
+    box-sizing: border-box;
+    width: 400px;
+    z-index: 10;
+    background-color: #ace3e4;
+    margin: auto;
+    text-align: center;
+}
+
+.triangle {
+    margin: auto!important;
+    width: 50%!important;
+    border-radius: 15px;
+    color: black;
+    padding: 5px 10px;
+    z-index: 3;
+}
+
+.triangles {
+    margin-top: -10px;
+    margin-bottom: 10px;
+    background-color: azure;
+    border: dotted;
+    border-radius: 15px;
+    background-color: #c9e265;
+    color: black;
+    padding: 5px 10px;
+    z-index: 3;
+}
+
+svg {
+
+    width: 150px;
+    height: 150px;
+    cursor: grab !important;
+    transform-origin: center;
+}
+
+.grabbing {
+     cursor: grabbing!important;
+ }
